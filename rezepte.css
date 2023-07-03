@@ -1,0 +1,261 @@
+:root {
+    --standardcolor: #a7c7ec;
+    --accentcolor: #f2f2f2;
+    --textcolor: #2b2b2b;
+    --backgroundcolor: #e4e7eb;
+    --borderradius: 20px;
+}
+
+body {
+    font-family: "Bebas+Neue", sans-serif;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+    margin: 0;
+}
+
+/*Navigationsleiste*/
+
+.navbar {
+    background-color: var(--accentcolor);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: var(--textcolor);
+    margin: 50px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/*Ein- und ausblenden des Filters - Checkbox unter Image*/
+
+#filter_image {
+    pointer-events: none;
+    position: fixed;
+    height: 70px;
+    width: auto;
+    z-index: 999;
+    margin-top: -90px;
+    margin-left: 20px;
+}
+
+#checkbox_filter_image {
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    z-index: 998;
+    margin-top: -90px;
+    margin-left: 20px;
+    opacity: 0;
+    visibility: none;
+}
+
+#checkbox_filter_image:checked~#wrapper .filterbox {
+    display: block;
+}
+
+/*Blauer Balken unter der Navigationsleiste*/
+
+#balken {
+    position: fixed;
+    margin-top: -110px;
+    border: 10px solid var(--standardcolor);
+    height: 90px;
+    width: 100vw;
+}
+
+/*Grosse Box, in der das Div für den Filter und die ganzen Divs der Rezepte drin sind*/
+
+#wrapper {
+    margin-top: 110px;
+    margin-bottom: 30px;
+    border: 0px solid red;
+    text-align: center
+}
+
+/*Rezept-Boxen*/
+
+#image {
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.star {
+    font-size: 300%;
+    color: var(--standardcolor);
+    margin-top: -25px;
+    text-align: center;
+}
+
+#Schwierigkeit,
+#Bewertung {
+    margin-top: -13px;
+    text-align: center;
+}
+
+/*Filterbox*/
+
+.filterbox {
+    float: left;
+    height: 90vh;
+    width: 300px;
+    padding: 10px;
+    background-color: var(--accentcolor);
+    margin-left: -10px;
+    margin-top: -10px;
+    z-index: 400;
+    border: 10px solid var(--standardcolor);
+    border-bottom-right-radius: 20px;
+    display: none;
+}
+
+/*Schriften in der Filterbox*/
+
+#namesuchfilter {
+    margin-top: 40px;
+}
+
+#schwierigkeitFilter {
+    margin-top: 50px
+}
+
+#typFilter {
+    margin-top: 80px
+}
+
+/*Position der Checkboxen in der Filterbox und dessen Text*/
+
+.checkbox-Schwierigkeit-einfach {
+    float: left;
+    margin-left: -220px;
+    margin-top: 170px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    height: 20px;
+    width: 17px;
+}
+
+.checkbox-Schwierigkeit-medium {
+    float: left;
+    margin-left: -220px;
+    margin-top: 190px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    height: 20px;
+    width: 17px;
+}
+
+.checkbox-Schwierigkeit-schwer {
+    float: left;
+    margin-left: -220px;
+    margin-top: 210px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    height: 20px;
+    width: 17px;
+}
+
+.checkbox-Typ-Alles {
+    float: left;
+    margin-left: -220px;
+    margin-top: 310px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    height: 20px;
+    width: 17px;
+}
+
+.checkbox-Typ-Vegetarisch {
+    float: left;
+    margin-left: -220px;
+    margin-top: 330px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    height: 20px;
+    width: 17px;
+}
+
+.checkbox-Typ-Vegan {
+    float: left;
+    margin-left: -220px;
+    margin-top: 350px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    height: 20px;
+    width: 17px;
+}
+
+/*Funktionalität der Filter*/
+
+#tomatensalat,
+#pizzarucola,
+#kartoffelsalat,
+#mango_lassi,
+#blumenkohl_spargel,
+#veganerkuchen {
+    display: none;
+}
+
+#filter-medium:checked~#pizzarucola,
+#filter-einfach:checked~#tomatensalat,
+#filter-einfach:checked~#kartoffelsalat,
+#filter-einfach:checked~#mango_lassi,
+#filter-medium:checked~#blumenkohl_spargel,
+#filter-schwer:checked~#veganerkuchen {
+    float: left;
+    background-color: var(--accentcolor);
+    margin: 10px;
+    border: 10px solid var(--standardcolor);
+    border-radius: 20px;
+    width: 400px;
+    height: 440px;
+    padding: 10px;
+    display: block;
+}
+
+#filter-vegetarisch:checked~#pizzarucola {
+    display: none;
+}
+
+#filter-vegan:checked~#pizzarucola,
+#filter-vegan:checked~#mango_lassi,
+#filter-vegan:checked~#tomatensalat,
+#filter-vegan:checked~#kartoffelsalat {
+    display: none;
+}
+
+/*FOOTER*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #a7c7ec;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 11px;
+}
