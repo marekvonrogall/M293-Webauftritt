@@ -75,7 +75,7 @@ body {
 
 .filterbox {
     position: fixed;
-    height: 80px;
+    height: 160px;
     width: 100vw;
     margin-top: 80px;
     background-color: var(--accentcolor);
@@ -83,22 +83,27 @@ body {
     border-left: transparent;
     border-right: transparent;
     display: none;
-    text-align: center
+    text-align: center;
 }
 
-.filterbox p {
+.filterbox #namesuchfilter {
     display: inline-block;
-    margin: 20px;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
 }
 
-#checkbox_menu_icon:checked~.filterbox {
+#checkbox_menu_icon:checked~.filterbox,
+#checkbox_menu_icon:checked~.checkbox-Schwierigkeit-einfach,
+#checkbox_menu_icon:checked~.checkbox-Schwierigkeit-medium,
+#checkbox_menu_icon:checked~.checkbox-Schwierigkeit-schwer,
+#checkbox_menu_icon:checked~.checkbox-Typ-Alles,
+#checkbox_menu_icon:checked~.checkbox-Typ-Vegetarisch,
+#checkbox_menu_icon:checked~.checkbox-Typ-Vegan {
     display: block;
 }
 
 #checkbox_menu_icon:checked~#wrapper {
-    margin-top: 190px;
+    margin-top: 270px;
 }
 
 /*Schriften in der Filterbox*/
@@ -113,24 +118,6 @@ body {
 }
 
 /*Rezept-Boxen*/
-
-#pizzarucola,
-#tomatensalat,
-#kartoffelsalat,
-#mango_lassi,
-#blumenkohl_spargel,
-#veganerkuchen {
-    text-align: center;
-    float: left;
-    background-color: var(--accentcolor);
-    margin: 10px;
-    border: 10px solid var(--standardcolor);
-    border-radius: 20px;
-    width: 300px;
-    height: 360px;
-    padding: 10px;
-    display: block;
-}
 
 #image {
     height: auto;
@@ -149,4 +136,128 @@ body {
 #Bewertung {
     margin-top: -13px;
     text-align: center;
+}
+
+/*FILTER*/
+
+#tomatensalat,
+#pizzarucola,
+#kartoffelsalat,
+#mango_lassi,
+#blumenkohl_spargel,
+#veganerkuchen {
+    display: none;
+}
+
+#filter-medium:checked~#wrapper #pizzarucola,
+#filter-einfach:checked~#wrapper #tomatensalat,
+#filter-einfach:checked~#wrapper #kartoffelsalat,
+#filter-einfach:checked~#wrapper #mango_lassi,
+#filter-medium:checked~#wrapper #blumenkohl_spargel,
+#filter-schwer:checked~#wrapper #veganerkuchen {
+    text-align: center;
+    float: left;
+    background-color: var(--accentcolor);
+    margin: 10px;
+    border: 10px solid var(--standardcolor);
+    border-radius: 20px;
+    width: 300px;
+    height: 360px;
+    padding: 10px;
+    display: block;
+}
+
+#filter-vegetarisch:checked~#wrapper #pizzarucola {
+    display: none;
+}
+
+#filter-vegan:checked~#wrapper #pizzarucola,
+#filter-vegan:checked~#wrapper #mango_lassi,
+#filter-vegan:checked~#wrapper #tomatensalat,
+#filter-vegan:checked~#wrapper #kartoffelsalat {
+    display: none;
+}
+
+.checkbox-Schwierigkeit-einfach {
+    float: left;
+    margin-left: 35vw;
+    margin-top: 160px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    display: none;
+}
+
+.checkbox-Schwierigkeit-medium {
+    float: left;
+    margin-left: 35vw;
+    margin-top: 185px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    display: none;
+}
+
+.checkbox-Schwierigkeit-schwer {
+    float: left;
+    margin-left: 35vw;
+    margin-top: 210px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    display: none;
+}
+
+.checkbox-Typ-Alles {
+    float: left;
+    margin-left: 57vw;
+    margin-top: 160px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    display: none;
+}
+
+.checkbox-Typ-Vegetarisch {
+    float: left;
+    margin-left: 57vw;
+    margin-top: 185px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    display: none;
+}
+
+.checkbox-Typ-Vegan {
+    float: left;
+    margin-left: 57vw;
+    margin-top: 210px;
+    padding-left: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    display: none;
 }
