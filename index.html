@@ -25,14 +25,22 @@
     <div id="balken"></div>
 
     <div class="filterbox">
-        <p id="namesuchfilter">Nach Rezepten filtern:</p>
-        <p>Alles</p>
-        <p>Medium</p>
-        <p>Schwer</p>
-        <p>Einfach</p>
-        <p>Medium</p>
-        <p>Schwer</p>
+        <h2 id="namesuchfilter">Nach Rezepten filtern:</h2>
     </div>
+
+    <input class="checkbox-Schwierigkeit-einfach" id="filter-einfach" type="checkbox" checked>
+    <label class="checkbox-Schwierigkeit-einfach" for="filter-einfach">Einfach</label>
+    <input class="checkbox-Schwierigkeit-medium" id="filter-medium" type="checkbox" checked>
+    <label class="checkbox-Schwierigkeit-medium" for="filter-medium">Medium</label>
+    <input class="checkbox-Schwierigkeit-schwer" id="filter-schwer" type="checkbox" checked>
+    <label class="checkbox-Schwierigkeit-schwer" for="filter-schwer">Schwierig</label>
+
+    <input class="checkbox-Typ-Alles" id="filter-alles" type="radio" name="typ" checked>
+    <label class="checkbox-Typ-Alles" for="filter-alles">Alles</label>
+    <input class="checkbox-Typ-Vegetarisch" id="filter-vegetarisch" type="radio" name="typ">
+    <label class="checkbox-Typ-Vegetarisch" for="filter-vegetarisch">Vegetarisch</label>
+    <input class="checkbox-Typ-Vegan" id="filter-vegan" type="radio" name="typ">
+    <label class="checkbox-Typ-Vegan" for="filter-vegan">Vegan</label>
 
     <div id="wrapper">
 
@@ -48,7 +56,6 @@
             <div class="star">&starf; &starf; &star; &star; &star;</div>
 
         </div>
-
         <div class="box" id="pizzarucola">
 
             <a href="rezept-pizzarucola.html">
@@ -61,7 +68,6 @@
             <div class="star">&starf; &starf; &starf; &starf; &starf;</div>
 
         </div>
-
         <div class="box" id="kartoffelsalat">
 
             <a href="rezept-kartoffelsalat.html">
@@ -74,7 +80,6 @@
             <div class="star">&starf; &starf; &starf; &starf; &star;</div>
 
         </div>
-
         <div class="box" id="mango_lassi">
 
             <a href="rezept-mango_lassi.html">
@@ -87,7 +92,6 @@
             <div class="star">&starf; &starf; &starf; &starf; &star;</div>
 
         </div>
-
         <div class="box" id="blumenkohl_spargel">
 
             <a href="rezept-blumenkohl_spargel.html">
@@ -100,7 +104,6 @@
             <div class="star">&starf; &starf; &starf; &starf; &starf;</div>
 
         </div>
-
         <div class="box" id="veganerkuchen">
 
             <a href="rezept-veganerkuchen.html">
@@ -113,6 +116,7 @@
             <div class="star">&starf; &starf; &starf; &starf; &starf;</div>
 
         </div>
+
     </div>
 </body>
 
