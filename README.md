@@ -2,4 +2,5 @@
 Projekt aus dem Modul 293
 
 
-## IN BEARBEITUNG...
+## THIS SITE IS NOT AVAILABLE AT THE MOMENT...
+Bitte versuchen Sie es später erneut.
