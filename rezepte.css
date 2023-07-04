@@ -113,7 +113,7 @@ body {
 
 .filterbox {
     float: left;
-    height: 90vh;
+    height: 460px;
     width: 300px;
     padding: 10px;
     background-color: var(--accentcolor);
