@@ -1,4 +1,4 @@
-/*VE RSUCH EIN GLOBALES FILE FÜR ALLE REZEPTE ZU ERSTELLEN o.O*/
+/*VERSUCH EIN GLOBALES FILE FÜR ALLE REZEPTE ZU ERSTELLEN o.O*/
 :root {
     --standardcolor: #a7c7ec;
     --accentcolor: #f2f2f2;
@@ -34,27 +34,6 @@ body {
     font-size: 24px;
     padding: 45px;
     font-weight: bold;
-}
-
-#menu_icon {
-    pointer-events: none;
-    position: fixed;
-    margin-left: 20px;
-    margin-top: 9px;
-    height: 60px;
-    width: 50px;
-    z-index: 5;
-}
-
-#checkbox_menu_icon {
-    position: fixed;
-    margin-left: 20px;
-    margin-top: 9px;
-    height: 60px;
-    width: 50px;
-    opacity: 0;
-    visibility: none;
-    z-index: 5;
 }
 
 #balken {
@@ -178,4 +157,77 @@ footer {
 
 footer p {
     margin-top: 11px;
+}
+
+
+@media screen and (max-width: 720px) {
+    .navbar-links a {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    #preview {
+        display: none;
+    }
+
+    .star {
+        font-size: 300%;
+        color: var(--standardcolor);
+        margin-top: -20px;
+        text-align: center;
+    }
+
+    #ingredients {
+        text-align: center;
+        background-color: var(--accentcolor);
+        margin: 10px;
+        border: 10px solid var(--standardcolor);
+        border-radius: 20px;
+        width: 300px;
+        height: 370px;
+        padding: 10px;
+        display: block;
+        margin-top: -1022.5px;
+    }
+
+    #instruction {
+        background-color: var(--accentcolor);
+        margin: 10px;
+        border: 10px solid var(--standardcolor);
+        border-radius: 20px;
+        width: 300px;
+        height: 550px;
+        padding: 10px;
+        margin-top: 422.5px;
+        display: block;
+    }
+
+    #instruction p,
+    #instruction h3,
+    #instruction h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #instruction iframe {
+        height: calc((100vw - 120px)/1.777777778);
+        width: calc(100vw - 120px);
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    #back {
+        text-align: center;
+        float: left;
+        background-color: var(--accentcolor);
+        margin: 10px;
+        border: 10px solid var(--standardcolor);
+        border-radius: 20px;
+        width: 300px;
+        height: 70px;
+        padding: 10px;
+        display: block;
+        margin-top: 0px;
+    }
+
 }
