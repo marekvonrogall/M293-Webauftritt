@@ -80,22 +80,23 @@ body {
     margin-top: 80px;
     border: 5px solid var(--standardcolor);
     width: 100vw;
+    z-index: 5;
 }
 
 /*WRAPPER + REZEPTE*/
 
 #wrapper {
     position: absolute;
-    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 .filterbox {
     position: fixed;
-    height: 160px;
+    height: 170px;
     width: 100vw;
     margin-top: 80px;
     background-color: var(--accentcolor);
@@ -123,7 +124,7 @@ body {
 }
 
 #checkbox_menu_icon:checked~#wrapper {
-    margin-top: 270px;
+    margin-top: 280px;
 }
 
 /*Schriften in der Filterbox*/
