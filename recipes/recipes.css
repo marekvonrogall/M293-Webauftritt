@@ -89,7 +89,7 @@ body {
     margin: 10px;
     border: 10px solid var(--standardcolor);
     border-radius: 20px;
-    width: calc(100vw - 440px);
+    width: calc(100vw - 455px);
     height: 930px;
     padding: 10px;
     display: block;
