@@ -105,6 +105,7 @@ body {
     border-right: transparent;
     display: none;
     text-align: center;
+    z-index: 6;
 }
 
 .filterbox #namesuchfilter {
