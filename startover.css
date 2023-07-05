@@ -11,6 +11,7 @@ body {
     background-color: var(--backgroundcolor);
     width: 100%;
     margin: 0;
+    margin-bottom: 50px;
 }
 
 /*NAVBAR*/
@@ -270,6 +271,34 @@ body {
     z-index: 7;
 }
 
+#footer {
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #ecdfa7;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+#footer p {
+    margin-top: 11px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #ecdfa7;
+    text-align: center;
+    display: block;
+}
+
+footer p {
+    margin-top: 11px;
+}
+
 @media screen and (max-width: 720px) {
     .navbar-links a {
         font-size: 20px;
@@ -319,17 +348,12 @@ body {
     .checkbox-Schwierigkeit-einfach {
         margin-left: 10vw;
     }
-}
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background: #ecdfa7;
-    text-align: center;
-}
+    footer {
+        display: none;
+    }
 
-footer p {
-    margin-top: 11px;
+    #footer {
+        display: block;
+    }
 }
