@@ -29,9 +29,16 @@ body {
 .navbar-links a {
     text-decoration: none;
     color: var(--textcolor);
-    font-size: 2vw;
+    font-size: 24px;
     padding: 45px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+    div.navbar-links a {
+        font-size: 20px;
+        padding: 25px;
+    }
 }
 
 #menu_icon {
