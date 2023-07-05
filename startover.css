@@ -34,13 +34,6 @@ body {
     font-weight: bold;
 }
 
-@media screen and (max-width: 720px) {
-    div.navbar-links a {
-        font-size: 20px;
-        padding: 25px;
-    }
-}
-
 #menu_icon {
     pointer-events: none;
     position: fixed;
@@ -55,11 +48,31 @@ body {
     position: fixed;
     margin-left: 20px;
     margin-top: 9px;
-    height: 80px;
-    width: 70px;
+    height: 60px;
+    width: 50px;
     opacity: 0;
     visibility: none;
     z-index: 5;
+}
+
+@media screen and (max-width: 720px) {
+    .navbar-links a {
+        font-size: 20px;
+        padding: 0px;
+        margin-left: 15px;
+    }
+
+    #menu_icon {
+        height: 50px;
+        width: 40px;
+        margin-top: 16px;
+    }
+
+    #checkbox_menu_icon {
+        height: 50px;
+        width: 40px;
+        margin-top: 16px;
+    }
 }
 
 #balken {
@@ -267,4 +280,13 @@ body {
     width: 20px;
     position: fixed;
     display: none;
+}
+
+@media screen and (max-width: 720px) {
+
+    .checkbox-Schwierigkeit-schwer,
+    .checkbox-Schwierigkeit-medium,
+    .checkbox-Schwierigkeit-einfach {
+        margin-left: 10vw;
+    }
 }
