@@ -1,1 +1,181 @@
+/*VE RSUCH EIN GLOBALES FILE FÜR ALLE REZEPTE ZU ERSTELLEN o.O*/
+:root {
+    --standardcolor: #a7c7ec;
+    --accentcolor: #f2f2f2;
+    --textcolor: #2b2b2b;
+    --backgroundcolor: #e4e7eb;
+    --borderradius: 20px;
+}
 
+body {
+    font-family: "Bebas+Neue", sans-serif;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: var(--accentcolor);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    margin-top: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: var(--textcolor);
+    font-size: 24px;
+    padding: 45px;
+    font-weight: bold;
+}
+
+#menu_icon {
+    pointer-events: none;
+    position: fixed;
+    margin-left: 20px;
+    margin-top: 9px;
+    height: 60px;
+    width: 50px;
+    z-index: 5;
+}
+
+#checkbox_menu_icon {
+    position: fixed;
+    margin-left: 20px;
+    margin-top: 9px;
+    height: 60px;
+    width: 50px;
+    opacity: 0;
+    visibility: none;
+    z-index: 5;
+}
+
+#balken {
+    position: fixed;
+    margin-top: 80px;
+    border: 5px solid var(--standardcolor);
+    width: 100vw;
+    z-index: 5;
+}
+
+#wrapper {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 100px;
+}
+
+#image {
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.star {
+    font-size: 300%;
+    color: var(--standardcolor);
+    margin-top: -25px;
+    text-align: center;
+}
+
+#Schwierigkeit,
+#Bewertung {
+    margin-top: -10px;
+    text-align: center;
+}
+
+#preview {
+    text-align: center;
+    float: left;
+    background-color: var(--accentcolor);
+    margin: 10px;
+    border: 10px solid var(--standardcolor);
+    border-radius: 20px;
+    width: 300px;
+    height: 370px;
+    padding: 10px;
+    display: block;
+}
+
+#instruction {
+    background-color: var(--accentcolor);
+    margin: 10px;
+    border: 10px solid var(--standardcolor);
+    border-radius: 20px;
+    width: calc(100vw - 440px);
+    height: 930px;
+    padding: 10px;
+    display: block;
+}
+
+#instruction p,
+#instruction h3,
+#instruction h1 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#instruction iframe {
+    height: calc((100vw - 550px)/1.777777778);
+    width: calc(100vw - 550px);
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#ingredients {
+    text-align: center;
+    background-color: var(--accentcolor);
+    margin: 10px;
+    border: 10px solid var(--standardcolor);
+    border-radius: 20px;
+    width: 300px;
+    height: 370px;
+    padding: 10px;
+    display: block;
+    margin-top: -550px;
+}
+
+#ingredients p {
+    margin: 5px;
+}
+
+#back {
+    text-align: center;
+    float: left;
+    background-color: var(--accentcolor);
+    margin: 10px;
+    border: 10px solid var(--standardcolor);
+    border-radius: 20px;
+    width: 300px;
+    height: 70px;
+    padding: 10px;
+    display: block;
+    margin-top: -120px;
+    margin-left: -350px;
+}
+
+#back h1 {
+    color: var(--textcolor);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #ecdfa7;
+    text-align: center;
+    display: block;
+}
+
+footer p {
+    margin-top: 11px;
+}
