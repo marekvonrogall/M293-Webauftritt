@@ -211,8 +211,8 @@ footer p {
     #instruction p,
     #instruction h3,
     #instruction h1 {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     #instruction iframe {
