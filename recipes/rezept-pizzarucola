@@ -1,1 +1,81 @@
+<!DOCTYPE html>
 
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tomatensalat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue">
+    <link rel="stylesheet" type="text/css" href="recipes.css">
+</head>
+
+
+<body>
+    <navbar class="navbar">
+        <div class="navbar-links">
+            <a href="../index.html">Rezepte</a>
+            <a href="../galerie.html">Galerie</a>
+            <a href="../contact.html">Kontakt</a>
+        </div>
+    </navbar>
+
+    <div id="balken"></div>
+
+    <div id="wrapper">
+        <div class="box" id="preview">
+
+            <img src="../Assets/pizzarucola.jpg" id="image" alt="Pizza Rucola">
+
+            <h3 id="Name">Pizza Rucola</h3>
+            <p id="Schwierigkeit">Schwierigkeit: medium</p>
+            <p id="Bewertung">Benutzer-Bewertung:</p>
+            <div class="star">&starf; &starf; &starf; &starf; &starf;</div>
+
+        </div>
+
+        <div class="box" id="instruction">
+            <h1>Zubereitung</h1>
+            <h3>Arbeitszeit ca. 25 Minuten | Gesamtzeit ca. 45 Minuten</h3>
+            <p>Pizzateig mit ca. 1/2 Dose Pizzatomaten
+                bestreichen und mit Käse bestreuen.
+                Bei ca. 200 °C Ober-/Unterhitze 20 Min. backen.
+                Tomaten halbieren, in eine Schüssel geben und Knoblauch dazu pressen. Rucola
+                waschen, hinzufügen und alles vermischen. Öl zum Salat geben und mit Salz und Pfeffer abschmecken.
+                Pizza aus dem Ofen nehmen und mit Schinken verteilen und den Tomaten-Rucola-Salat anrichten.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8uYlbcitGIk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="box" id="ingredients">
+            <h1>Zutaten</h1>
+            <p>1 Pkt. Pizzateig</p>
+            <p>1 kl. Dose/n Pizzatomaten mit Oregano</p>
+            <p>150 g Käse nach Wahl</p>
+            <p>200 g Kirschtomate(n)</p>
+            <p>2 Zehe/n Knoblauch</p>
+            <p>1 Bund Rucola, ca. 150 g</p>
+            <p>2 TL Olivenöl</p>
+            <p>200 g Parmaschinken oder Serranoschinken, in dünnen Scheiben</p>
+            <p>n. B. Salz und Pfeffer, aus der Mühle</p>
+        </div>
+
+        <a href="../index.html">
+            <div class="box" id="back">
+                <h1>zurück</h1>
+            </div>
+        </a>
+
+
+        <div id="bottom-left"></div>
+        <div id="right"></div>
+    </div>
+</body>
+
+<footer>
+    <p>Modul 293 - Website erstellt von Marek von Rogall</p>
+</footer>
+
+</html>
