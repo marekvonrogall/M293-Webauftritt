@@ -122,7 +122,7 @@ body {
 
 /*Rezept-Boxen*/
 
-#image {
+.image {
     height: auto;
     width: 300px;
     border-radius: 10px;
