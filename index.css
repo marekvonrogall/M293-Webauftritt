@@ -140,8 +140,8 @@ body {
     text-align: center;
 }
 
-#Schwierigkeit,
-#Bewertung {
+.Schwierigkeit,
+.Bewertung {
     margin-top: -10px;
     text-align: center;
 }
